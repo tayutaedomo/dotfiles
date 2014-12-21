@@ -1,0 +1,31 @@
+# ~/.screenrc
+
+startup_message off
+autodetach on
+vbell off
+
+#defencoding eucJP
+
+#shell bash
+#shelltitle "$ |shell"
+
+#escape ^Z^Z
+escape ^Tt
+
+logfile "~/.screen/log/screen%d_%m(%y).log"
+log on
+hardcopydir "~/.screen/tmp"
+
+#hardstatus alwayslastline "%H%=%Y/%m/%d %02c"
+#hardstatus alwayslastline "%w | %h"
+#hardstatus alwayslastline "%w-%H | %h"
+hardstatus alwayslastline "screen @%H |%c %m/%d | %w"
+
+#caption always "%-w%10L>%{=b bw}%n %t%{-}%+w%-0="
+
+defscrollback 10240
+#defscrollback 99999ermcapinfo xterm* ti@:te@
+#defhstatus "$USER@^EH_^En ^Et -- ^EW"
+
+#term xterm-color
+#defbce "on"
