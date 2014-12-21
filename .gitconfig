@@ -1,0 +1,16 @@
+[user]
+  name  = <your name>
+  email = <your email>
+[core]
+  editor = vim
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[filter "media"]
+ clean = git-media-clean %f
+ smudge = git-media-smudge %f
